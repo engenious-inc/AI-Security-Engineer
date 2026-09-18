@@ -1,6 +1,6 @@
-# Break Into AI Security
+# AI Security Engineer
 
-Hands-on AI security course: red-teaming LLMs and agentic systems, prompt injection, tool/skill poisoning, and AI system assurance with promptfoo.
+Red Teaming & Agentic AI Defense. Hands-on AI security course: red-teaming LLMs and agentic systems, prompt injection, tool/skill poisoning, and AI system assurance with promptfoo.
 
 > **Status: under construction, built weekend by weekend.** This is the first AI Security cohort (Sep 2026), an advanced follow-on for alumni of the AI Testing / Evaluations track. The curriculum is being written as it is taught, so this repo grows after each session rather than shipping complete. Nothing here is a finished spec yet.
 
