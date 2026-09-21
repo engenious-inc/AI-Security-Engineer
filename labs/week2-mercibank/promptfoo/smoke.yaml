@@ -22,7 +22,7 @@ providers:
       method: POST
       headers:
         Content-Type: application/json
-        Authorization: 'Bearer {{env.MERCI_TARGET_KEY}}'
+        Authorization: "Bearer {{ env.MERCI_TARGET_KEY or 'merci-lab-key' }}"
       body:
         model: merci-assistant
         messages:
