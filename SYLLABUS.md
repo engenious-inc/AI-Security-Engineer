@@ -2,8 +2,8 @@
 
 Reconstructed from the live weekend sessions (the Day 1 and Day 2 transcripts) and the cohort
 Discord. There is no pre-existing AI Security curriculum; this is the first cohort and the
-syllabus is written as it is taught. **Draft for the instructors (Vladimir, Hime) to validate
-and extend.**
+syllabus is written as it is taught. **Draft for the security instructors (Vladimir and Jaime) to
+validate and extend.**
 
 - **Track:** AI Security Engineer - Red Teaming & Agentic AI Defense
 - **Format:** 5 weeks / 10 days, Sat + Sun live; alumni-only advanced follow-on
