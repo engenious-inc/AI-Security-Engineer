@@ -13,7 +13,7 @@
 
     <!-- Statistics Dashboard -->
     <div class="stats-grid">
-        <div class="stat-card">
+        <div class="stat-card hud-corners">
             <div class="stat-icon">📊</div>
             <div class="stat-content">
                 <h3 id="total-tickets">-</h3>
@@ -21,7 +21,7 @@
             </div>
         </div>
         
-        <div class="stat-card">
+        <div class="stat-card hud-corners">
             <div class="stat-icon">🟢</div>
             <div class="stat-content">
                 <h3 id="open-tickets">-</h3>
@@ -29,7 +29,7 @@
             </div>
         </div>
         
-        <div class="stat-card">
+        <div class="stat-card hud-corners">
             <div class="stat-icon">🔵</div>
             <div class="stat-content">
                 <h3 id="in-progress-tickets">-</h3>
@@ -37,7 +37,7 @@
             </div>
         </div>
         
-        <div class="stat-card">
+        <div class="stat-card hud-corners">
             <div class="stat-icon">✅</div>
             <div class="stat-content">
                 <h3 id="resolved-tickets">-</h3>
@@ -213,7 +213,7 @@
 .stat-card {
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(25px);
-    border-radius: 15px;
+    border-radius: 6px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 1.5rem;
     display: flex;
@@ -247,7 +247,7 @@
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(25px);
     -webkit-backdrop-filter: blur(25px);
-    border-radius: 20px;
+    border-radius: 8px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 2rem;
     margin-bottom: 2rem;
@@ -306,7 +306,7 @@
     width: 100%;
     border-collapse: collapse;
     background: rgba(255,255,255,0.1);
-    border-radius: 10px;
+    border-radius: 4px;
     overflow: hidden;
 }
 
@@ -332,25 +332,33 @@
 }
 
 .ticket-status-badge {
+    font-family: var(--mono);
     padding: 0.25rem 0.75rem;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 500;
+    border-radius: 8px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: .04em;
     text-transform: uppercase;
+    background: transparent;
+    border: 1px solid currentColor;
 }
 
 .priority-badge {
+    font-family: var(--mono);
     padding: 0.25rem 0.5rem;
-    border-radius: 15px;
-    font-size: 0.75rem;
-    font-weight: 500;
+    border-radius: 6px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: .04em;
     text-transform: uppercase;
+    background: transparent;
+    border: 1px solid currentColor;
 }
 
-.priority-low { background: #64748b; color: white; }
-.priority-medium { background: #3ea6ff; color: white; }
-.priority-high { background: #fbbf24; color: white; }
-.priority-urgent { background: #ef4444; color: white; }
+.priority-low { color: #94a3b8; }
+.priority-medium { color: var(--accent); box-shadow: 0 0 10px rgba(62,166,255,.25); }
+.priority-high { color: var(--warning); box-shadow: 0 0 10px rgba(242,193,78,.25); }
+.priority-urgent { color: var(--danger); box-shadow: 0 0 10px rgba(239,68,68,.3); }
 
 .btn {
     padding: 0.5rem 1rem;
@@ -365,7 +373,7 @@
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #3ea6ff 0%, #22d3ee 100%);
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
     color: white;
     box-shadow: 0 4px 15px rgba(62, 166, 255, 0.4);
 }
@@ -502,7 +510,7 @@
 
 /* Same fix as tickets.html: the open option list is a native popup that ignores the translucent style above. */
 .action-group select option {
-    background: #1a1d24;
+    background: var(--bg-2);
     color: white;
 }
 
