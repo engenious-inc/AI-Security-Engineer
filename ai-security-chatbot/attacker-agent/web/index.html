@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ChatRaider</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+  <header>
+    <div class="brand">Chat<span class="dot">●</span>Raider</div>
+    <div class="meta" id="metaTarget">target: —</div>
+    <div class="meta" id="metaBrain">brain: —</div>
+    <div class="spacer"></div>
+    <span class="badge" id="statusBadge">connecting…</span>
+  </header>
+
+  <div class="main">
+    <aside class="side">
+      <div class="group">
+        <h3>Target</h3>
+        <div class="kv"><span>URL</span><span id="cfgTarget">—</span></div>
+        <div class="kv"><span>Victim account</span><span id="cfgVictim">—</span></div>
+        <div class="kv"><span>Attacker brain</span><span id="cfgBrain">—</span></div>
+        <p class="hint">Edit <code>.env</code> to change these, then restart the dashboard.</p>
+      </div>
+
+      <div class="group">
+        <button class="btn primary" id="runBtn">▶ Run campaign</button>
+        <button class="btn" id="verifyBtn">✔ Verify findings</button>
+      </div>
+
+      <div class="group">
+        <h3>What it's going to try</h3>
+        <div id="objList" class="objlist"></div>
+      </div>
+
+      <div class="hint">Authorized lab only. Localhost by default — see rules-of-engagement.md.</div>
+    </aside>
+
+    <section class="content">
+      <nav class="tabs">
+        <div class="tab active" data-pane="live">Live run</div>
+        <div class="tab" data-pane="findings">Findings <span id="fCount" class="badge"></span></div>
+        <div class="tab" data-pane="glossary">Glossary</div>
+      </nav>
+
+      <div class="pane active" id="pane-live"><div id="stream"></div></div>
+
+      <div class="pane" id="pane-findings"><div class="cards" id="cards"><div class="empty">No findings yet — run a campaign.</div></div></div>
+
+      <div class="pane" id="pane-glossary">
+        <p class="hint">Plain-English terms used in the live run and findings.</p>
+        <dl id="glossaryList" class="glossary"></dl>
+      </div>
+    </section>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

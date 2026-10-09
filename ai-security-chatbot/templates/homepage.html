@@ -6,7 +6,45 @@
 <!-- Hero Section -->
 <section class="hero">
     <div class="hero-container">
+        <svg class="hero-bg-graphic" viewBox="0 0 600 460" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+                <linearGradient id="nodeLineGrad" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#3ea6ff"/>
+                    <stop offset="100%" stop-color="#22d3ee"/>
+                </linearGradient>
+            </defs>
+            <g stroke="url(#nodeLineGrad)" stroke-width="1.5" fill="none" opacity="0.55">
+                <line x1="70" y1="80" x2="230" y2="50"/>
+                <line x1="230" y1="50" x2="390" y2="120"/>
+                <line x1="390" y1="120" x2="520" y2="70"/>
+                <line x1="230" y1="50" x2="210" y2="210"/>
+                <line x1="210" y1="210" x2="390" y2="120"/>
+                <line x1="210" y1="210" x2="90" y2="290"/>
+                <line x1="210" y1="210" x2="330" y2="300"/>
+                <line x1="330" y1="300" x2="500" y2="260"/>
+                <line x1="390" y1="120" x2="520" y2="250"/>
+                <line x1="520" y1="250" x2="500" y2="260"/>
+                <line x1="90" y1="290" x2="170" y2="400"/>
+                <line x1="330" y1="300" x2="300" y2="420"/>
+            </g>
+            <g fill="#3ea6ff">
+                <circle cx="70" cy="80" r="5" style="animation-delay:0s"/>
+                <circle cx="230" cy="50" r="4" style="animation-delay:.4s"/>
+                <circle cx="520" cy="70" r="4" style="animation-delay:.8s"/>
+                <circle cx="90" cy="290" r="4" style="animation-delay:1.2s"/>
+                <circle cx="500" cy="260" r="4" style="animation-delay:1.6s"/>
+                <circle cx="520" cy="250" r="4" style="animation-delay:2s"/>
+                <circle cx="170" cy="400" r="4" style="animation-delay:2.4s"/>
+                <circle cx="300" cy="420" r="4" style="animation-delay:2.8s"/>
+            </g>
+            <g fill="#22d3ee">
+                <circle cx="390" cy="120" r="6" style="animation-delay:.6s"/>
+                <circle cx="210" cy="210" r="7" style="animation-delay:1.4s"/>
+                <circle cx="330" cy="300" r="5" style="animation-delay:2.2s"/>
+            </g>
+        </svg>
         <div class="hero-content">
+            <span class="hero-eyebrow"><span class="status-dot"></span>NodeLine Tech &mdash; Cables &amp; Accessories</span>
             <h1 class="hero-title">Premium Cables for Every Connection</h1>
             <p class="hero-subtitle">From USB-C to HDMI, we've got the high-quality cables and accessories you need. Fast shipping, lifetime warranty, and 24/7 support.</p>
             <div class="hero-actions">
@@ -17,27 +55,60 @@
     </div>
 </section>
 
+<script>
+(function () {
+    const hero = document.querySelector('.hero');
+    const graphic = document.querySelector('.hero-bg-graphic');
+    if (!hero || !graphic || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    let targetX = 0, targetY = 0, currentX = 0, currentY = 0, ticking = false;
+
+    function render() {
+        currentX += (targetX - currentX) * 0.08;
+        currentY += (targetY - currentY) * 0.08;
+        graphic.style.setProperty('--parallax-x', currentX.toFixed(2) + 'px');
+        graphic.style.setProperty('--parallax-y', currentY.toFixed(2) + 'px');
+        ticking = (Math.abs(targetX - currentX) > 0.05 || Math.abs(targetY - currentY) > 0.05);
+        if (ticking) requestAnimationFrame(render);
+    }
+
+    hero.addEventListener('mousemove', function (e) {
+        const rect = hero.getBoundingClientRect();
+        const relX = (e.clientX - rect.left) / rect.width - 0.5;
+        const relY = (e.clientY - rect.top) / rect.height - 0.5;
+        targetX = relX * 24;
+        targetY = relY * 16;
+        if (!ticking) { ticking = true; requestAnimationFrame(render); }
+    });
+
+    hero.addEventListener('mouseleave', function () {
+        targetX = 0; targetY = 0;
+        if (!ticking) { ticking = true; requestAnimationFrame(render); }
+    });
+})();
+</script>
+
 <!-- Features Section -->
 <section class="features">
     <div class="container">
         <h2 class="section-title">Why Choose NodeLine Tech?</h2>
         <div class="features-grid">
-            <div class="feature-card">
+            <div class="feature-card hud-corners">
                 <div class="feature-icon">⚡</div>
                 <h3>Fast & Reliable</h3>
                 <p>High-speed data transfer and charging with premium materials and gold-plated connectors.</p>
             </div>
-            <div class="feature-card">
+            <div class="feature-card hud-corners">
                 <div class="feature-icon">🛡️</div>
                 <h3>Lifetime Warranty</h3>
                 <p>We stand behind our products with a comprehensive lifetime warranty on all cables.</p>
             </div>
-            <div class="feature-card">
+            <div class="feature-card hud-corners">
                 <div class="feature-icon">🚚</div>
                 <h3>Fast Shipping</h3>
                 <p>Free shipping on orders over $25. Most orders ship same day and arrive within 2-3 business days.</p>
             </div>
-            <div class="feature-card">
+            <div class="feature-card hud-corners">
                 <div class="feature-icon">💬</div>
                 <h3>24/7 Support</h3>
                 <p>Get instant help with our AI-powered chat support, available 24/7 for all your questions.</p>
@@ -51,36 +122,36 @@
     <div class="container">
         <h2 class="section-title">Popular Products</h2>
         <div class="products-grid">
-            <div class="product-card">
+            <div class="product-card hud-corners">
                 <div class="product-image">🔌</div>
                 <h3>USB-C to USB-C Cable</h3>
                 <p class="product-description">60W fast charging, 10Gbps data transfer, 6ft length</p>
                 <div class="product-price">$19.99</div>
-                <div class="product-rating">⭐⭐⭐⭐⭐ (1,247 reviews)</div>
+                <div class="product-rating"><span class="score-bar"><span style="width:96%"></span></span><span class="score-value">4.8/5</span><span class="rating-count">(1,247 reviews)</span></div>
                 <button class="btn btn-primary" onclick="showProductDetails('usb-c-cable')">More Details</button>
             </div>
-            <div class="product-card">
+            <div class="product-card hud-corners">
                 <div class="product-image">📺</div>
                 <h3>4K HDMI Cable</h3>
                 <p class="product-description">8K@60Hz, 4K@120Hz, HDR10+, 10ft premium cable</p>
                 <div class="product-price">$24.99</div>
-                <div class="product-rating">⭐⭐⭐⭐⭐ (856 reviews)</div>
+                <div class="product-rating"><span class="score-bar"><span style="width:96%"></span></span><span class="score-value">4.8/5</span><span class="rating-count">(856 reviews)</span></div>
                 <button class="btn btn-primary" onclick="showProductDetails('4k-hdmi-cable')">More Details</button>
             </div>
-            <div class="product-card">
+            <div class="product-card hud-corners">
                 <div class="product-image">🔋</div>
                 <h3>Multi-Port Charging Hub</h3>
                 <p class="product-description">6 ports, 100W total, USB-C PD, smart charging</p>
                 <div class="product-price">$49.99</div>
-                <div class="product-rating">⭐⭐⭐⭐⭐ (692 reviews)</div>
+                <div class="product-rating"><span class="score-bar"><span style="width:96%"></span></span><span class="score-value">4.8/5</span><span class="rating-count">(692 reviews)</span></div>
                 <button class="btn btn-primary" onclick="showProductDetails('charging-hub')">More Details</button>
             </div>
-            <div class="product-card">
+            <div class="product-card hud-corners">
                 <div class="product-image">🔗</div>
                 <h3>USB-C Hub Adapter</h3>
                 <p class="product-description">7-in-1 hub with HDMI, USB-A, SD card, Ethernet</p>
                 <div class="product-price">$34.99</div>
-                <div class="product-rating">⭐⭐⭐⭐⭐ (1,104 reviews)</div>
+                <div class="product-rating"><span class="score-bar"><span style="width:98%"></span></span><span class="score-value">4.9/5</span><span class="rating-count">(1,104 reviews)</span></div>
                 <button class="btn btn-primary" onclick="showProductDetails('usb-c-hub')">More Details</button>
             </div>
         </div>
@@ -123,20 +194,20 @@
     <div class="container">
         <h2 class="section-title">What Our Customers Say</h2>
         <div class="reviews-grid">
-            <div class="review-card">
-                <div class="review-rating">⭐⭐⭐⭐⭐</div>
-                <p class="review-text">"Amazing quality cables! My USB-C cable has been working perfectly for over a year now. The customer service chat helped me choose the right one."</p>
-                <div class="review-author">- Sarah M., Software Developer</div>
+            <div class="review-card hud-corners">
+                <div class="review-score"><span class="score-bar"><span style="width:98%"></span></span><span class="score-value">4.9/5</span></div>
+                <p class="review-text">"The gold-plated connectors actually make a difference — zero signal drop over 10ft even with my dock daisy-chained for a triple-monitor setup."</p>
+                <div class="review-author">- Daniel K., IT Administrator</div>
             </div>
-            <div class="review-card">
-                <div class="review-rating">⭐⭐⭐⭐⭐</div>
-                <p class="review-text">"Fast shipping and great prices. The HDMI cable works flawlessly with my 4K monitor. Will definitely order again!"</p>
-                <div class="review-author">- Mike R., Graphic Designer</div>
+            <div class="review-card hud-corners">
+                <div class="review-score"><span class="score-bar"><span style="width:100%"></span></span><span class="score-value">5.0/5</span></div>
+                <p class="review-text">"I've gone through cheaper cables that frayed in a month. This one's still solid after six months of daily use hauling gear around my studio."</p>
+                <div class="review-author">- Priya N., Content Creator</div>
             </div>
-            <div class="review-card">
-                <div class="review-rating">⭐⭐⭐⭐⭐</div>
-                <p class="review-text">"The AI chat support is incredible! Got help immediately at 2AM when I needed to find a specific adapter. Highly recommend!"</p>
-                <div class="review-author">- Jennifer L., Marketing Manager</div>
+            <div class="review-card hud-corners">
+                <div class="review-score"><span class="score-bar"><span style="width:94%"></span></span><span class="score-value">4.7/5</span></div>
+                <p class="review-text">"Ordered the wrong HDMI length by mistake — the chat support caught it before it shipped and swapped it same day. That kind of service is rare."</p>
+                <div class="review-author">- Marcus T., Electrical Engineer</div>
             </div>
         </div>
     </div>
@@ -187,22 +258,22 @@
 
 /* Larger, dark-themed product details popup */
 #product-details-modal .modal-content {
-    background: #14171f !important;
-    color: #e8eaed !important;
+    background: var(--bg-1) !important;
+    color: var(--text) !important;
     max-width: 900px !important;
     width: 92% !important;
     max-height: 85vh !important;
-    border: 1px solid #2a2e37 !important;
-    border-radius: 16px !important;
+    border: 1px solid var(--line) !important;
+    border-radius: 6px !important;
     box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5) !important;
 }
 
 #product-details-modal .modal-header {
-    border-bottom-color: #2a2e37 !important;
+    border-bottom-color: var(--line) !important;
 }
 
 #product-details-modal #product-modal-title {
-    color: #e8eaed !important;
+    color: var(--text) !important;
 }
 
 @media (max-width: 768px) {
@@ -219,7 +290,7 @@
     word-wrap: break-word;
     line-height: 1.6;
     scrollbar-width: thin;
-    scrollbar-color: #3ea6ff #1a1d24;
+    scrollbar-color: var(--accent) var(--bg-2);
 }
 
 .product-details-content::-webkit-scrollbar {
@@ -227,17 +298,17 @@
 }
 
 .product-details-content::-webkit-scrollbar-track {
-    background: #1a1d24;
+    background: var(--bg-2);
     border-radius: 8px;
 }
 
 .product-details-content::-webkit-scrollbar-thumb {
-    background: #3ea6ff;
+    background: var(--accent);
     border-radius: 8px;
 }
 
 .product-details-content::-webkit-scrollbar-thumb:hover {
-    background: #22d3ee;
+    background: var(--accent-2);
 }
 
 .product-details-content h3 {
@@ -272,7 +343,7 @@
 }
 
 .product-details-content strong {
-    color: #1f8fe6;
+    color: var(--accent);
 }
 
 .loading {

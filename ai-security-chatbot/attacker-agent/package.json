@@ -1,0 +1,17 @@
+{
+  "name": "chatraider",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "ChatRaider — a small, modern attacker agent that demos real, live findings against the ai-security-chatbot (NodeLine Tech) app. Zero npm dependencies.",
+  "scripts": {
+    "start": "node attack.mjs",
+    "demo": "node attack.mjs",
+    "verify": "node verify.mjs",
+    "dashboard": "node server.mjs",
+    "clean": "rm -rf campaign"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -23,7 +23,7 @@
     <!-- Main tickets interface -->
     <div id="tickets-main" style="display: none;">
         <!-- Create New Ticket Section -->
-        <div class="glass-card ticket-creation">
+        <div class="glass-card ticket-creation hud-corners">
             <h3>Create New Ticket</h3>
             <form id="create-ticket-form">
                 <div class="form-group">
@@ -161,7 +161,7 @@
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(25px);
     -webkit-backdrop-filter: blur(25px);
-    border-radius: 20px;
+    border-radius: 8px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 2rem;
     margin-bottom: 2rem;
@@ -204,7 +204,7 @@
     width: 100%;
     padding: 0.75rem 1rem;
     border: 1px solid rgba(255,255,255,0.3);
-    border-radius: 10px;
+    border-radius: 4px;
     background: rgba(255,255,255,0.1);
     color: white;
     font-size: 1rem;
@@ -228,14 +228,14 @@
 /* The closed <select> box picks up the translucent style above, but the open option list is rendered by
    the browser as a native popup that ignores inherited background/color — give it an explicit dark theme. */
 .form-group select option {
-    background: #1a1d24;
+    background: var(--bg-2);
     color: white;
 }
 
 .btn {
     padding: 0.75rem 1.5rem;
     border: none;
-    border-radius: 10px;
+    border-radius: 4px;
     font-weight: 600;
     text-decoration: none;
     display: inline-block;
@@ -245,7 +245,7 @@
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #3ea6ff 0%, #22d3ee 100%);
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
     color: white;
     box-shadow: 0 4px 15px rgba(62, 166, 255, 0.4);
 }
@@ -272,13 +272,13 @@
 
 /* Same fix as .form-group select: the open option list is a native popup that ignores the translucent style above. */
 .tickets-filters select option {
-    background: #1a1d24;
+    background: var(--bg-2);
     color: white;
 }
 
 .ticket-item {
     background: rgba(255,255,255,0.1);
-    border-radius: 10px;
+    border-radius: 4px;
     padding: 1.5rem;
     margin-bottom: 1rem;
     border: 1px solid rgba(255,255,255,0.2);
@@ -299,23 +299,29 @@
 }
 
 .ticket-number {
+    font-family: var(--mono);
     font-weight: 600;
-    color: white;
-    font-size: 1.1rem;
+    color: var(--accent-2);
+    font-size: 1.05rem;
+    letter-spacing: .02em;
 }
 
 .ticket-status {
+    font-family: var(--mono);
     padding: 0.25rem 0.75rem;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    font-weight: 500;
+    border-radius: 8px;
+    font-size: 0.78rem;
+    font-weight: 600;
     text-transform: uppercase;
+    letter-spacing: .04em;
+    background: transparent;
+    border: 1px solid currentColor;
 }
 
-.status-open { background: #fbbf24; color: white; }
-.status-in_progress { background: #3ea6ff; color: white; }
-.status-resolved { background: #34d399; color: white; }
-.status-closed { background: #64748b; color: white; }
+.status-open { color: var(--warning); box-shadow: 0 0 10px rgba(242,193,78,.25); }
+.status-in_progress { color: var(--accent); box-shadow: 0 0 10px rgba(62,166,255,.25); }
+.status-resolved { color: var(--success); box-shadow: 0 0 10px rgba(52,211,153,.25); }
+.status-closed { color: #94a3b8; box-shadow: 0 0 10px rgba(148,163,184,.2); }
 
 .ticket-subject {
     color: white;
@@ -335,7 +341,7 @@
 .ticket-category {
     background: rgba(255,255,255,0.2);
     padding: 0.25rem 0.5rem;
-    border-radius: 15px;
+    border-radius: 6px;
     font-size: 0.8rem;
 }
 
@@ -392,7 +398,7 @@
 .modal-close {
     background: none;
     border: none;
-    color: #e8eaed; /* dark close button for contrast on light modal */
+    color: var(--text); /* dark close button for contrast on light modal */
     font-size: 2rem;
     cursor: pointer;
     opacity: 0.8;
@@ -405,7 +411,7 @@
 
 /* Ensure modal header and title are dark for readability */
 .modal-header h3, .modal-content h3 {
-    color: #e8eaed !important;
+    color: var(--text) !important;
 }
 
 .auth-message {
@@ -435,20 +441,25 @@
 }
 
 .escalation-badge {
-    background: #ef4444;
-    color: white;
+    font-family: var(--mono);
+    background: transparent;
+    color: var(--danger);
+    border: 1px solid var(--danger);
+    box-shadow: 0 0 10px rgba(239,68,68,.25);
     padding: 0.25rem 0.5rem;
-    border-radius: 12px;
+    border-radius: 6px;
     font-size: 0.75rem;
     font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .04em;
     margin-left: 0.5rem;
 }
 
 /* Ensure ticket modal content is readable: light card with dark text */
 .modal-content {
     background: rgba(15, 17, 21,0.98) !important;
-    color: #e8eaed !important;
-    border-radius: 12px;
+    color: var(--text) !important;
+    border-radius: 6px;
     padding: 1.5rem;
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
@@ -456,7 +467,7 @@
 /* Strong override: force dark text for modal and all children to avoid inheritance issues */
 .modal-content.glass-card,
 .modal-content.glass-card * {
-    color: #e8eaed !important;
+    color: var(--text) !important;
 }
 
 /* Ensure headings and paragraphs within modal are readable */
@@ -468,15 +479,15 @@
 .modal-content label,
 .modal-content span,
 .modal-content div {
-    color: #e8eaed !important;
+    color: var(--text) !important;
 }
 
 .sla-section {
     background: rgba(255,255,255,0.1);
-    border-radius: 10px;
+    border-radius: 4px;
     padding: 1.5rem;
     margin: 1.5rem 0;
-    border-left: 4px solid #3ea6ff;
+    border-left: 4px solid var(--accent);
 }
 
 .sla-section h4 {
@@ -493,22 +504,27 @@
 }
 
 .sla-status {
+    font-family: var(--mono);
     padding: 0.25rem 0.75rem;
-    border-radius: 15px;
-    font-size: 0.85rem;
-    font-weight: 500;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+    background: transparent;
+    border: 1px solid currentColor;
 }
 
-.sla-met { background: #34d399; color: white; }
-.sla-warning { background: #fbbf24; color: white; }
-.sla-breach { background: #ef4444; color: white; }
+.sla-met { color: var(--success); box-shadow: 0 0 10px rgba(52,211,153,.25); }
+.sla-warning { color: var(--warning); box-shadow: 0 0 10px rgba(242,193,78,.25); }
+.sla-breach { background: var(--danger); color: white; }
 
 .escalation-section {
     background: rgba(255,255,255,0.1);
-    border-radius: 10px;
+    border-radius: 4px;
     padding: 1.5rem;
     margin: 1.5rem 0;
-    border-left: 4px solid #ef4444;
+    border-left: 4px solid var(--danger);
 }
 
 .escalation-section h4 {
@@ -517,7 +533,7 @@
 }
 
 .btn-warning {
-    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    background: linear-gradient(135deg, var(--warning) 0%, #f59e0b 100%);
     color: white;
     box-shadow: 0 4px 15px rgba(243, 156, 18, 0.4);
 }
@@ -883,7 +899,7 @@ function showTicketDetails(ticket, updates) {
     const modalContent = document.querySelector('#ticket-modal .modal-content');
     if (modalContent) {
         modalContent.style.backgroundColor = 'rgba(15, 17, 21,0.98)';
-        modalContent.style.color = '#e8eaed';
+        modalContent.style.color = 'var(--text)';
     }
 }
 
