@@ -4,9 +4,9 @@ First session of Weekend 2, the hands-on turn after Week 1. The pre-attack day: 
 and the system, agree the rules, then connect to the target. Led by Vladimir Tanev (AIVSS lecture) and
 Jaime Mantilla (tools and the recon lab), hosted by Tagir Fakhriev.
 
-**Lab target:** [`labs/week2-mercibank/`](../labs/week2-mercibank/) (the MerciBank support-agent lab: a
+**Lab target:** [`modules/01-manual-red-team/mercibank/`](../modules/01-manual-red-team/mercibank/) (the MerciBank support-agent lab: a
 live LLM with function-calling tools, a help-centre RAG store, and session memory, over an HTTP API;
-called "Mercy Bank" in the sessions). Read [`rules-of-engagement.md`](../labs/week2-mercibank/rules-of-engagement.md)
+called "Mercy Bank" in the sessions). Read [`rules-of-engagement.md`](../modules/01-manual-red-team/mercibank/rules-of-engagement.md)
 first.
 
 ## What we covered
@@ -37,11 +37,11 @@ TryHackMe, and a new non-LLM classifier model (name transcribed as JEF/GEF, comp
 1. **Paper recon on the questionnaire** (~30 min): from the Mercy Bank intake alone (no code), give the
    purpose and top forbidden action, map applicable risks against the OWASP LLM Top 10 and Agentic Top 10,
    and write two or three attack hypotheses in the form "because it has X, I would try Y".
-2. **Connect to the target** (hands-on): the target is [`labs/week2-mercibank/`](../labs/week2-mercibank/).
+2. **Connect to the target** (hands-on): the target is [`modules/01-manual-red-team/mercibank/`](../modules/01-manual-red-team/mercibank/).
    Copy `.env.example` to `.env`, add an OpenAI-compatible model key (OpenRouter, OpenAI, or a local model),
    `npm start` (the target has zero dependencies), then check `curl localhost:8080/health`. There is no UI,
    so talk to `POST /v1/chat/completions` with `Authorization: Bearer merci-lab-key` via curl or Postman.
-   Step by step: [`labs/week2-mercibank/day3-recon-and-connect.md`](../labs/week2-mercibank/day3-recon-and-connect.md).
+   Step by step: [`modules/01-manual-red-team/mercibank/day3-recon-and-connect.md`](../modules/01-manual-red-team/mercibank/day3-recon-and-connect.md).
 
 ## Homework
 Fill in the declared-vs-observed recon table (entry points and authorization, response shape and evidence,

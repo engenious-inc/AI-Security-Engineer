@@ -12,13 +12,12 @@ Red Teaming & Agentic AI Defense. Hands-on AI security course: red-teaming LLMs 
   record of the sessions. Day 10 is not yet written: its recording has not been posted.
 - **[session-notes/](session-notes/)**: the fuller as-taught record per weekend (Weekends 1-5, Day 10
   pending), one level more detailed than the `days/` guides.
-- **[labs/](labs/)**: the runnable lab targets by week (MerciBank, the Week 3 attacker agent, RedCell)
-  plus the Week 5 NodeLine Tech app in [ai-security-chatbot/](ai-security-chatbot/). This track's shape
-  is one escalating target plus evolving attacker tooling, rather than per-topic apps, so labs live at
-  the top level instead of nested under `modules/` the way the sibling repo nests PayFlow/FinanceBot.
-- **[modules/](modules/)** and **[docs/](docs/)**: placeholders for now; the lesson/module breakdown
-  (mirroring the sibling repo's topic-based `modules/` + exercise `docs/`) is to be defined by the
-  instructors.
+- **[modules/](modules/)**: the course by topic, one module per weekend, each holding its runnable lab
+  target (MerciBank, the simple attacker, RedCell, the NodeLine Tech app) plus a short README. This
+  mirrors the sibling repo's `modules/` layout, where each running app sits inside the module that
+  teaches it. See [`modules/README.md`](modules/) for the map.
+- **[docs/](docs/)**: placeholder for now; the quickstart/exercise/reference breakdown (mirroring the
+  sibling repo's `docs/`) is to be defined by the instructors.
 
 ## Prerequisites & toolkit (as used in the sessions)
 Prior AI Testing / Evaluations cohort, or equivalent promptfoo red-team experience. Core tools used so far: promptfoo, Node, Python, Git, and an AI coding assistant (Claude Code / Codex). Runnable eval suites and setup scripts will be added here as the course builds them; the course uses promptfoo and can point at the sibling course's apps as targets.

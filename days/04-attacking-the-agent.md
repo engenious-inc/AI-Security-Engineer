@@ -4,9 +4,9 @@ Second session of Weekend 2. Hands-on day: attack the Mercy Bank agent by hand, 
 OWASP LLM and Agentic Top 10s, and prove the findings in promptfoo. Slide title: "attack it, prove it, score
 it" (scoring deferred to a later weekend). Led by Vladimir Tanev and Jaime Mantilla, hosted by Tagir Fakhriev.
 
-**Lab target:** [`labs/week2-mercibank/`](../labs/week2-mercibank/), attacked by hand today; the Day 4
+**Lab target:** [`modules/01-manual-red-team/mercibank/`](../modules/01-manual-red-team/mercibank/), attacked by hand today; the Day 4
 promptfoo attack suites are added to its `promptfoo/` after the session, so `git pull` for the latest.
-**Next app:** [`ai-security-chatbot/`](../ai-security-chatbot/), the Docker-based store attacked from Week 4.
+**Next app:** [`modules/04-app-testing/ai-security-chatbot/`](../modules/04-app-testing/ai-security-chatbot/), the Docker-based store attacked from Week 4.
 
 ## What we covered
 - **Recap.** A CVSS-vs-AIVSS table: CVSS for traditional, deterministic software (amplifiers: network,

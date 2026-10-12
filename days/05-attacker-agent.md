@@ -1,6 +1,6 @@
 # Day 5 (Sat Sep 26, 2026): Building an attacker AI agent
 
-Weekend 3. **Lab:** [`labs/week3-attacker-agent/`](../labs/week3-attacker-agent/) · [`labs/week2-mercibank/`](../labs/week2-mercibank/)
+Weekend 3. **Lab:** [`modules/02-building-an-attacker/simple-attacker/`](../modules/02-building-an-attacker/simple-attacker/) · [`modules/01-manual-red-team/mercibank/`](../modules/01-manual-red-team/mercibank/)
 
 First session of Weekend 3, the automation turn: Week 2 attacked Mercy Bank by hand, this weekend builds
 an AI agent that attacks it and verifies the findings. Led by Vladimir Tanev, hosted by Igor Dorovskikh
