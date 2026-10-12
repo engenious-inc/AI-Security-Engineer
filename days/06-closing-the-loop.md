@@ -1,6 +1,6 @@
 # Day 6 (Sun Sep 27, 2026): Closing the loop: verify, gate, promote to promptfoo
 
-Weekend 3. **Lab:** [`labs/week3-attacker-agent/`](../labs/week3-attacker-agent/)
+Weekend 3. **Lab:** [`modules/02-building-an-attacker/simple-attacker/`](../modules/02-building-an-attacker/simple-attacker/)
 
 Second session of Weekend 3. Run mostly as trio breakouts with less lecturing. Led by Vladimir Tanev
 (Jaime Mantilla out again this weekend), with Igor Dorovskikh opening and hosting. The midterm survey was

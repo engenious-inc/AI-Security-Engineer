@@ -1,6 +1,6 @@
 # Day 7 (Sat Oct 3, 2026): RedCell, the advanced attacker agent and its dashboard
 
-Weekend 4. **Lab:** [`labs/attacker-pro/`](../labs/attacker-pro/) · [`labs/week2-mercibank/`](../labs/week2-mercibank/)
+Weekend 4. **Lab:** [`modules/03-advanced-attacker/redcell/`](../modules/03-advanced-attacker/redcell/) · [`modules/01-manual-red-team/mercibank/`](../modules/01-manual-red-team/mercibank/)
 
 First session of Weekend 4. Low turnout at the start (four to five people, rising to roughly eight or nine
 for the breakouts); three attendees were listen-only. Led by Vladimir Tanev (built and presented RedCell),

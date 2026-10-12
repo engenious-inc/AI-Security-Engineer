@@ -1,6 +1,6 @@
 # Day 8 (Sun Oct 4, 2026): Customizing RedCell and the first stakeholder report
 
-Weekend 4. **Lab:** [`labs/attacker-pro/`](../labs/attacker-pro/)
+Weekend 4. **Lab:** [`modules/03-advanced-attacker/redcell/`](../modules/03-advanced-attacker/redcell/)
 
 Second session of Weekend 4. Tagir Fakhriev ran the breakout rooms (no Igor Dorovskikh today); Jaime
 Mantilla and Vladimir Tanev led the lecture and demos. Several attendees were again listen-only, and one

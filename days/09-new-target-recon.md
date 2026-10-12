@@ -1,6 +1,6 @@
 # Day 9 (Sat Oct 10, 2026): A new target: NodeLine Tech recon and testing
 
-Weekend 5. **Lab:** [`ai-security-chatbot/`](../ai-security-chatbot/)
+Weekend 5. **Lab:** [`modules/04-app-testing/ai-security-chatbot/`](../modules/04-app-testing/ai-security-chatbot/)
 
 > **Syllabus note:** the original plan named Day 9 "red-team campaign design + adaptive attacks." As
 > taught, Day 9 went back to fundamentals on the new target instead: intake, recon, fingerprinting, and
