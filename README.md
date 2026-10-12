@@ -8,9 +8,8 @@ Red Teaming & Agentic AI Defense. Hands-on AI security course: red-teaming LLMs 
 - **[SYLLABUS.md](SYLLABUS.md)**: the one-page curriculum overview, day by day, with status and links
   into `days/` and `session-notes/`. Start here for a skim of the whole course.
 - **[days/](days/)**: one guide per teaching session, organised by day as it is taught (mirrors the
-  sibling repo's `days/`, which organises its lessons by session too). Days 1-4 are instructor-written.
-  Days 5-9 are a **draft reconstructed from the session transcripts, pending Vladimir and Jaime's
-  review**, see each file's note. Day 10 is not yet written: its transcript has not been posted.
+  sibling repo's `days/`, which organises its lessons by session too). Days 1-9 are the as-taught
+  record of the sessions. Day 10 is not yet written: its recording has not been posted.
 - **[session-notes/](session-notes/)**: the fuller as-taught record per weekend (Weekends 1-5, Day 10
   pending), one level more detailed than the `days/` guides.
 - **[labs/](labs/)**: the runnable lab targets by week (MerciBank, the Week 3 attacker agent, RedCell)
@@ -19,7 +18,7 @@ Red Teaming & Agentic AI Defense. Hands-on AI security course: red-teaming LLMs 
   the top level instead of nested under `modules/` the way the sibling repo nests PayFlow/FinanceBot.
 - **[modules/](modules/)** and **[docs/](docs/)**: placeholders for now; the lesson/module breakdown
   (mirroring the sibling repo's topic-based `modules/` + exercise `docs/`) is to be defined by the
-  instructors once the as-taught content above has been reviewed.
+  instructors.
 
 ## Prerequisites & toolkit (as used in the sessions)
 Prior AI Testing / Evaluations cohort, or equivalent promptfoo red-team experience. Core tools used so far: promptfoo, Node, Python, Git, and an AI coding assistant (Claude Code / Codex). Runnable eval suites and setup scripts will be added here as the course builds them; the course uses promptfoo and can point at the sibling course's apps as targets.

@@ -2,9 +2,6 @@
 
 Weekend 3. **Lab:** [`labs/week3-attacker-agent/`](../labs/week3-attacker-agent/)
 
-> **Draft reconstructed from the session transcript**, not yet reviewed by the instructors. Vladimir Tanev
-> and Jaime Mantilla should correct and extend this before it is treated as final. Same layout as Days 1-4.
-
 Second session of Weekend 3. Run mostly as trio breakouts with less lecturing. Led by Vladimir Tanev
 (Jaime Mantilla out again this weekend), with Igor Dorovskikh opening and hosting. The midterm survey was
 posted in the Day 6 thread and filled live at the start of class.

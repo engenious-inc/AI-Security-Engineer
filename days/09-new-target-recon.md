@@ -2,9 +2,6 @@
 
 Weekend 5. **Lab:** [`ai-security-chatbot/`](../ai-security-chatbot/)
 
-> **Draft reconstructed from the session transcript**, not yet reviewed by the instructors. Vladimir Tanev
-> and Jaime Mantilla should correct and extend this before it is treated as final. Same layout as Days 1-4.
->
 > **Syllabus note:** the original plan named Day 9 "red-team campaign design + adaptive attacks." As
 > taught, Day 9 went back to fundamentals on the new target instead: intake, recon, fingerprinting, and
 > scripted direct injection, explicitly framed as "before promptfoo existed." See the syllabus update for
