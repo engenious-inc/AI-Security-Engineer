@@ -5,6 +5,8 @@ Red Teaming & Agentic AI Defense. Hands-on AI security course: red-teaming LLMs 
 > **Status: under construction, built weekend by weekend.** This is the first AI Security cohort (Sep 2026), an advanced follow-on for alumni of the AI Testing / Evaluations track. The curriculum is being written as it is taught, so this repo grows after each session rather than shipping complete. Nothing here is a finished spec yet.
 
 ## What's here
+- **[SYLLABUS.md](SYLLABUS.md)**: the one-page curriculum overview, day by day, with status and links
+  into `days/` and `session-notes/`. Start here for a skim of the whole course.
 - **[days/](days/)**: one guide per teaching session, organised by day as it is taught (mirrors the
   sibling repo's `days/`, which organises its lessons by session too). Days 1-4 are instructor-written.
   Days 5-9 are a **draft reconstructed from the session transcripts, pending Vladimir and Jaime's
@@ -18,20 +20,6 @@ Red Teaming & Agentic AI Defense. Hands-on AI security course: red-teaming LLMs 
 - **[modules/](modules/)** and **[docs/](docs/)**: placeholders for now; the lesson/module breakdown
   (mirroring the sibling repo's topic-based `modules/` + exercise `docs/`) is to be defined by the
   instructors once the as-taught content above has been reviewed.
-
-## Curriculum (as taught so far)
-Five weekends, ten sessions. Full guides in [`days/`](days/); the weekend-level as-taught record is in
-[`session-notes/`](session-notes/).
-- **Weekend 1** (Days 1-2): foundations through a security lens, then the playbook: agents, the threat
-  landscape and the role.
-- **Weekend 2** (Days 3-4): scoping a target (AIVSS, intake, ROE, recon), then manual agentic attacks on
-  Mercy Bank.
-- **Weekend 3** (Days 5-6): building an attacker AI agent, then closing the loop (verify, gate, promote
-  to promptfoo).
-- **Weekend 4** (Days 7-8): RedCell, the advanced attacker agent and its dashboard, then customizing it
-  and the first stakeholder report.
-- **Weekend 5** (Days 9-10): a new target, NodeLine Tech: recon, fingerprinting and scripted injection;
-  Day 10 continues hands-on and closes the cohort.
 
 ## Prerequisites & toolkit (as used in the sessions)
 Prior AI Testing / Evaluations cohort, or equivalent promptfoo red-team experience. Core tools used so far: promptfoo, Node, Python, Git, and an AI coding assistant (Claude Code / Codex). Runnable eval suites and setup scripts will be added here as the course builds them; the course uses promptfoo and can point at the sibling course's apps as targets.
