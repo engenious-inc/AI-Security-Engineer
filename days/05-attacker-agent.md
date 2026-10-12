@@ -2,9 +2,6 @@
 
 Weekend 3. **Lab:** [`labs/week3-attacker-agent/`](../labs/week3-attacker-agent/) · [`labs/week2-mercibank/`](../labs/week2-mercibank/)
 
-> **Draft reconstructed from the session transcript**, not yet reviewed by the instructors. Vladimir Tanev
-> and Jaime Mantilla should correct and extend this before it is treated as final. Same layout as Days 1-4.
-
 First session of Weekend 3, the automation turn: Week 2 attacked Mercy Bank by hand, this weekend builds
 an AI agent that attacks it and verifies the findings. Led by Vladimir Tanev, hosted by Igor Dorovskikh
 (breakouts, timekeeping, careers); Jaime Mantilla was out this week, Vladimir covered his part.

@@ -8,9 +8,8 @@ session rather than shipping complete.
 
 - **Track:** AI Security Engineer - Red Teaming & Agentic AI Defense
 - **Format:** 5 weekends / 10 days, Sat + Sun live; alumni-only advanced follow-on
-- **Status:** Days 1-4 are instructor-written. Days 5-9 are a **draft reconstructed from the session
-  transcripts, pending Vladimir and Jaime's review** (see each day's note). Day 10 is not yet written:
-  its transcript has not been posted.
+- **Status:** Days 1-9 are the as-taught record of the sessions. Day 10 is not yet written: its
+  recording has not been posted.
 
 ## Prerequisites & tools (as used in the sessions)
 Prior AI Testing / Evaluations cohort or equivalent promptfoo red-team experience · promptfoo ·
@@ -47,31 +46,31 @@ recurring lesson on writing correct assertions. Setup walkthrough for the Week 4
 
 ## Weekend 3
 
-### Day 5 (Sat Sep 26): Building an attacker AI agent *(draft, pending review)*
+### Day 5 (Sat Sep 26): Building an attacker AI agent
 A six-stage episode engine (Wake/Orient/Plan/Attack/Judge/Reinforce) with a UCB1 planner, run first as
 a fixed script with no model, then with a real model wired in as the attacker's "brain." Guide:
 [`days/05-attacker-agent.md`](days/05-attacker-agent.md).
 
-### Day 6 (Sun Sep 27): Closing the loop: verify, gate, promote to promptfoo *(draft, pending review)*
+### Day 6 (Sun Sep 27): Closing the loop: verify, gate, promote to promptfoo
 Custom attack strategies, then the verify/gate/promote loop (`npm run verify`: 3 fresh-session reruns,
 a 3-of-3 gate, auto-promotion to promptfoo regression YAML) and the judgment call behind the gate
 (impact vs frequency). Guide: [`days/06-closing-the-loop.md`](days/06-closing-the-loop.md).
 
 ## Weekend 4
 
-### Day 7 (Sat Oct 3): RedCell, the advanced attacker agent and its dashboard *(draft, pending review)*
+### Day 7 (Sat Oct 3): RedCell, the advanced attacker agent and its dashboard
 Meet RedCell: a ten-stage loop (wake, orient, plan, attack, judge, reinforce, verify, score, promote,
 report) and its HTML dashboard; decoding the live-run output (objective vs family vs strategy, the
 bandit planner's priority bars). Guide: [`days/07-redcell.md`](days/07-redcell.md).
 
-### Day 8 (Sun Oct 4): Customizing RedCell and the first stakeholder report *(draft, pending review)*
+### Day 8 (Sun Oct 4): Customizing RedCell and the first stakeholder report
 Student-customized dashboards, mock vs real adapter testing, and the first findings report pitched as
 to a C-level audience. NodeLine Tech, next weekend's target, previewed with an indirect-injection demo.
 Guide: [`days/08-customizing-redcell.md`](days/08-customizing-redcell.md).
 
 ## Weekend 5
 
-### Day 9 (Sat Oct 10): A new target: NodeLine Tech recon and testing *(draft, pending review)*
+### Day 9 (Sat Oct 10): A new target: NodeLine Tech recon and testing
 A new target, back to fundamentals: intake, recon and fingerprinting, model fingerprinting with the
 "LLM map" tool, OWASP LLM Top-10 / MITRE ATLAS mapping, scripted direct prompt injection, and a
 home-built LLM-as-judge. **Diverges from the original plan** (see the note in the guide): taught as

@@ -2,9 +2,6 @@
 
 Weekend 4. **Lab:** [`labs/attacker-pro/`](../labs/attacker-pro/)
 
-> **Draft reconstructed from the session transcript**, not yet reviewed by the instructors. Vladimir Tanev
-> and Jaime Mantilla should correct and extend this before it is treated as final. Same layout as Days 1-4.
-
 Second session of Weekend 4. Tagir Fakhriev ran the breakout rooms (no Igor Dorovskikh today); Jaime
 Mantilla and Vladimir Tanev led the lecture and demos. Several attendees were again listen-only, and one
 student had not done the homework. Framing: Mercy Bank, the basic attacker, and now RedCell are all a

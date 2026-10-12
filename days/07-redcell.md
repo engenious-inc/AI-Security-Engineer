@@ -2,9 +2,6 @@
 
 Weekend 4. **Lab:** [`labs/attacker-pro/`](../labs/attacker-pro/) · [`labs/week2-mercibank/`](../labs/week2-mercibank/)
 
-> **Draft reconstructed from the session transcript**, not yet reviewed by the instructors. Vladimir Tanev
-> and Jaime Mantilla should correct and extend this before it is treated as final. Same layout as Days 1-4.
-
 First session of Weekend 4. Low turnout at the start (four to five people, rising to roughly eight or nine
 for the breakouts); three attendees were listen-only. Led by Vladimir Tanev (built and presented RedCell),
 hosted by Jaime Mantilla (running the Zoom rooms for the first time), with Igor Dorovskikh opening. Week
