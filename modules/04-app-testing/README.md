@@ -19,6 +19,6 @@ Run it: `cd ai-security-chatbot && ./launch.sh` (auto-detects hardware), app on
 [`ai-security-chatbot/attacker-agent/`](ai-security-chatbot/attacker-agent/).
 
 ## Materials still to land here
-In the cohort Discord but not yet in the repo: the Burp Suite + FoxyProxy setup guide, the Day 9
-25-technique direct-injection CSV and the injection/judge/recon scripts, and the Day 10
-model-comparison script. Day 10's recording/transcript had not been posted as of Oct 12.
+In the cohort Discord but not yet in the repo: the Burp Suite + FoxyProxy setup guide, and the Day 9
+25-technique direct-injection CSV with the injection/judge/recon scripts. Day 10's
+recording/transcript had not been posted as of Oct 12.

@@ -22,6 +22,6 @@ application, not a bare model, after the earlier modules attack a single agent.
 > test. Read each lab's `rules-of-engagement.md` first.
 
 ## Status
-Modules 01-03's labs are instructor-written and run. Module 04's app is instructor-written; its
-Day 9-10 teaching write-ups are drafts pending review (see the day guides). The module `README.md`
-files are the natural home for the student guides and decks that are still only in Discord.
+The labs run and the day guides are the as-taught record of the sessions (Day 10 is not yet written;
+its recording has not been posted). The module `README.md` files are the natural home for the student
+guides and decks that are still only in Discord.
