@@ -1,4 +1,4 @@
-# Day 4 (Sun Sep 21, 2026): Attacking the agent, manual agentic attacks on Mercy Bank
+# Day 4 (Sun Sep 20, 2026): Attacking the agent, manual agentic attacks on Mercy Bank
 
 Second session of Weekend 2. Hands-on day: attack the Mercy Bank agent by hand, tag each attack against the
 OWASP LLM and Agentic Top 10s, and prove the findings in promptfoo. Slide title: "attack it, prove it, score

@@ -1,4 +1,4 @@
-# Day 3 (Sat Sep 20, 2026): Scoping the target, AIVSS, intake & recon
+# Day 3 (Sat Sep 19, 2026): Scoping the target, AIVSS, intake & recon
 
 First session of Weekend 2, the hands-on turn after Week 1. The pre-attack day: understand the business
 and the system, agree the rules, then connect to the target. Led by Vladimir Tanev (AIVSS lecture) and

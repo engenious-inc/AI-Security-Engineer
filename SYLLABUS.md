@@ -7,7 +7,8 @@ validate and extend.**
 
 - **Track:** AI Security Engineer - Red Teaming & Agentic AI Defense
 - **Format:** 5 weeks / 10 days, Sat + Sun live; alumni-only advanced follow-on
-- **Captured so far:** Weekend 1 (Days 1-2) and Weekend 2 (Days 3-4). Later sessions are added here after they run.
+- **Captured so far:** Weekend 1 (Days 1-2) and Weekend 2 (Days 3-4). Weekends 3-5 (Days 5-10) ran Sep 26 to Oct 11;
+  their entries are listed below with dates and labs and are to be written by the instructors.
 
 ## Prerequisites & tools (as used in the sessions)
 Prior AI Testing / Evaluations cohort or equivalent promptfoo red-team experience · promptfoo ·
@@ -30,7 +31,7 @@ static testing to system assurance; reading the job market. Full guide:
 
 ## Weekend 2
 
-### Day 3 (Sat Sep 20): Scoping the target, AIVSS, intake & recon
+### Day 3 (Sat Sep 19): Scoping the target, AIVSS, intake & recon
 The pre-attack day. Homework show-and-tell, then AIVSS (why CVSS cannot score agents, and how AIVSS
 complements it with 10 factors scored 0 / 0.5 / 1), the intake questionnaire (decision tree, declared vs
 observed) for the hypothetical client Mercy Bank, rules of engagement (what makes testing legal), and recon
@@ -38,7 +39,7 @@ plus fingerprinting: connecting to the local MerciBank lab (`labs/week2-merciban
 `/v1/chat/completions`), and using Claude Code or Codex to read the codebase. Full guide:
 [`days/03-scoping-the-target.md`](days/03-scoping-the-target.md).
 
-### Day 4 (Sun Sep 21): Attacking the agent, manual agentic attacks on Mercy Bank
+### Day 4 (Sun Sep 20): Attacking the agent, manual agentic attacks on Mercy Bank
 Hands-on attack day. Recap (a CVSS-vs-AIVSS table), the declared-vs-observed recon discussion, then manual
 attacks on Mercy Bank tagged against the OWASP LLM and Agentic Top 10s: indirect prompt injection, broken
 access control, sensitive data exposure, excessive agency, chain attacks, system prompt leakage, and harmful
@@ -46,6 +47,36 @@ output generation, all built into a promptfoo framework. A recurring lesson on w
 (LLM rubric vs deterministic `contains`, and not trusting AI-generated asserts). Setup walkthrough for the
 Week 4 app (Docker, Burp Suite, RunPod, Ollama, Firefox with FoxyProxy). Full guide:
 [`days/04-attacking-the-agent.md`](days/04-attacking-the-agent.md).
+
+## Weekend 3
+
+### Day 5 (Sat Sep 26): Building an attacker AI agent
+Lab: [`labs/week3-attacker-agent/`](labs/week3-attacker-agent/) against `labs/week2-mercibank/`. To be written
+by the instructors. Guide: [`days/05-attacker-agent.md`](days/05-attacker-agent.md).
+
+### Day 6 (Sun Sep 27): Closing the loop: verify, gate, promote to promptfoo
+Lab: [`labs/week3-attacker-agent/`](labs/week3-attacker-agent/). To be written by the instructors. Guide:
+[`days/06-closing-the-loop.md`](days/06-closing-the-loop.md).
+
+## Weekend 4
+
+### Day 7 (Sat Oct 3): RedCell, the advanced attacker agent and its dashboard
+Lab: [`labs/attacker-pro/`](labs/attacker-pro/) against `labs/week2-mercibank/`. To be written by the
+instructors. Guide: [`days/07-redcell.md`](days/07-redcell.md).
+
+### Day 8 (Sun Oct 4): Customizing RedCell and the first stakeholder report
+Lab: [`labs/attacker-pro/`](labs/attacker-pro/). To be written by the instructors. Guide:
+[`days/08-customizing-redcell.md`](days/08-customizing-redcell.md).
+
+## Weekend 5
+
+### Day 9 (Sat Oct 10): A new target: NodeLine Tech recon and testing
+Lab: [`ai-security-chatbot/`](ai-security-chatbot/) (NodeLine Tech; intake questionnaire and ROE in its
+`docs/`). To be written by the instructors. Guide: [`days/09-new-target-recon.md`](days/09-new-target-recon.md).
+
+### Day 10 (Sun Oct 11): Final day
+Lab: [`ai-security-chatbot/`](ai-security-chatbot/). To be written by the instructors once the session
+recording is posted. Guide: [`days/10-final-day.md`](days/10-final-day.md).
 
 ## Named but not yet scheduled
 Topics the instructors said the course will cover, in no fixed order yet:
@@ -62,8 +93,7 @@ Topics the instructors said the course will cover, in no fixed order yet:
 - Adaptive attacks
 - Red-team campaign design
 
-Days 5-10 will be filled in here after each weekend runs. This section stays unordered until the
-instructors set the sequence.
+This list predates Weekends 3-5; the instructors prune it as they write those days up.
 
 ## Standing components (every weekend, from the sessions)
 - Career track: exercises tied to interview questions; live job-post reads; public posting (LinkedIn).

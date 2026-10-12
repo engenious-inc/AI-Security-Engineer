@@ -1,6 +1,6 @@
 # Sessions
 
-The course organised by teaching session. Each weekend adds two days here after it runs.
+The course organised by teaching session, one guide per day.
 
 | Weekend | Session | Guide |
 |---|---|---|
@@ -8,6 +8,11 @@ The course organised by teaching session. Each weekend adds two days here after 
 | 1 | Day 2 - The playbook: agents, threat landscape & the role | [`02-the-playbook.md`](02-the-playbook.md) |
 | 2 | Day 3: Scoping the target, AIVSS, intake & recon | [`03-scoping-the-target.md`](03-scoping-the-target.md) |
 | 2 | Day 4: Attacking the agent, manual agentic attacks on Mercy Bank | [`04-attacking-the-agent.md`](04-attacking-the-agent.md) |
+| 3 | Day 5: Building an attacker AI agent | [`05-attacker-agent.md`](05-attacker-agent.md) (to be written) |
+| 3 | Day 6: Closing the loop: verify, gate, promote to promptfoo | [`06-closing-the-loop.md`](06-closing-the-loop.md) (to be written) |
+| 4 | Day 7: RedCell, the advanced attacker agent and its dashboard | [`07-redcell.md`](07-redcell.md) (to be written) |
+| 4 | Day 8: Customizing RedCell and the first stakeholder report | [`08-customizing-redcell.md`](08-customizing-redcell.md) (to be written) |
+| 5 | Day 9: A new target: NodeLine Tech recon and testing | [`09-new-target-recon.md`](09-new-target-recon.md) (to be written) |
+| 5 | Day 10: Final day | [`10-final-day.md`](10-final-day.md) (to be written) |
 
-Days 5-10 are added as the sessions run. See [`../SYLLABUS.md`](../SYLLABUS.md) for the topics
-instructors have named for later weekends (not yet scheduled).
+Days 5-10 have their files in place; the instructors fill them in. See [`../SYLLABUS.md`](../SYLLABUS.md).

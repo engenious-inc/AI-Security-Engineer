@@ -5,8 +5,9 @@ Red Teaming & Agentic AI Defense. Hands-on AI security course: red-teaming LLMs 
 > **Status: under construction, built weekend by weekend.** This is the first AI Security cohort (Sep 2026), an advanced follow-on for alumni of the AI Testing / Evaluations track. The curriculum is being written as it is taught, so this repo grows after each session rather than shipping complete. Nothing here is a finished spec yet.
 
 ## What's here
-- **[SYLLABUS.md](SYLLABUS.md)** — the living syllabus. Days 1–2 are captured as they were taught; later topics are named but not yet scheduled. A draft for the instructors to validate and extend.
-- **[days/](days/)** — one guide per teaching session (what was run, what was covered). Weekend 1 (Days 1–2) so far.
+- **[SYLLABUS.md](SYLLABUS.md)** — the living syllabus. Days 1–4 are written up as taught; Days 5–10 have dates and labs and are to be written by the instructors. A draft for the instructors to validate and extend.
+- **[days/](days/)** — one guide per teaching session (what was run, what was covered). Days 1–4 written; Days 5–10 in place for the instructors to fill.
+- **[labs/](labs/)** — the runnable lab targets by week (MerciBank, the Week 3 attacker agent, RedCell) plus the Week 5 NodeLine Tech app in [ai-security-chatbot/](ai-security-chatbot/).
 - **[session-notes/](session-notes/)** — the detailed as-taught record per weekend.
 - **[modules/](modules/)** and **[docs/](docs/)** — placeholders for now; the lesson/module breakdown is to be defined by the instructors (mirrors the sibling repo's layout).
 
